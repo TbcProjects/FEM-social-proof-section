@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass  -w sass -o public/css"
+    "sass": "node-sass  -w sass -o public/css",
+    "start": "nodemon index.js"
+
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
   }
 }

@@ -1,0 +1,65 @@
+//**[FONTS]**
+// stack
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+$font-stack: "Spartan", sans-serif;
+// weight
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+//size
+$font-title: 48px;
+$font-body: 15px;
+$font-sub: 13px;
+
+//**[COLORS]**
+// Primary
+$color-primary: #512051;
+$color-secondary: #ee69a4;
+// Neutral
+$color-title: #3e323d;
+$color-body: #927b91;
+$color-rating: #ef9546;
+$color-white: #ffffff;
+
+//**[TYPOGRAPHY]**
+@mixin title {
+  font-family: $font-stack;
+  font-size: $font-title;
+  font-weight: $font-bold;
+  color: $color-title;
+}
+
+@mixin body {
+  font-family: $font-stack;
+  font-size: $font-body;
+  font-weight: $font-medium;
+  color: $color-body;
+}
+
+@mixin rating-body {
+  font-family: $font-stack;
+  font-size: $font-sub;
+  font-weight: $font-bold;
+  color: $color-title;
+}
+
+@mixin card-title {
+  font-family: $font-stack;
+  font-size: $font-sub;
+  font-weight: $font-bold;
+  color: $color-white;
+}
+
+@mixin card-body {
+  font-family: $font-stack;
+  font-size: $font-sub;
+  font-weight: $font-medium;
+  color: $color-white;
+}
+
+@mixin verified {
+  font-family: $font-stack;
+  font-size: $font-sub;
+  font-weight: $font-medium;
+  color: $color-secondary;
+}
