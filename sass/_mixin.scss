@@ -1,0 +1,46 @@
+//**[TYPOGRAPHY]**
+
+// desktop
+@mixin title-desktop {
+  font-size: $font-title-desktop;
+  font-weight: $font-bold;
+  color: $color-title;
+}
+// mobile
+@mixin title-mobile {
+  font-size: $font-title-mobile;
+  font-weight: $font-bold;
+  color: $color-title;
+  line-height: 32px;
+}
+
+@mixin body-text {
+  font-size: $font-body;
+  font-weight: $font-medium;
+  color: $color-body;
+  line-height: 25px;
+}
+
+@mixin rating-body-text {
+  font-size: $font-sub;
+  font-weight: $font-bold;
+  color: $color-title;
+}
+
+@mixin card-title-text {
+  font-size: $font-sub;
+  font-weight: $font-bold;
+  color: $color-white;
+}
+
+@mixin card-body-text {
+  font-size: $font-sub;
+  font-weight: $font-medium;
+  color: $color-white;
+}
+
+@mixin verified-body-text {
+  font-size: $font-sub;
+  font-weight: $font-medium;
+  color: $color-secondary;
+}

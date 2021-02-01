@@ -7,7 +7,8 @@ $font-regular: 400;
 $font-medium: 500;
 $font-bold: 700;
 //size
-$font-title: 48px;
+$font-title-desktop: 48px;
+$font-title-mobile: 32px;
 $font-body: 15px;
 $font-sub: 13px;
 
@@ -19,47 +20,9 @@ $color-secondary: #ee69a4;
 $color-title: #3e323d;
 $color-body: #927b91;
 $color-rating: #ef9546;
+$color-content: #f7f2f7;
 $color-white: #ffffff;
 
-//**[TYPOGRAPHY]**
-@mixin title {
-  font-family: $font-stack;
-  font-size: $font-title;
-  font-weight: $font-bold;
-  color: $color-title;
-}
-
-@mixin body {
-  font-family: $font-stack;
-  font-size: $font-body;
-  font-weight: $font-medium;
-  color: $color-body;
-}
-
-@mixin rating-body {
-  font-family: $font-stack;
-  font-size: $font-sub;
-  font-weight: $font-bold;
-  color: $color-title;
-}
-
-@mixin card-title {
-  font-family: $font-stack;
-  font-size: $font-sub;
-  font-weight: $font-bold;
-  color: $color-white;
-}
-
-@mixin card-body {
-  font-family: $font-stack;
-  font-size: $font-sub;
-  font-weight: $font-medium;
-  color: $color-white;
-}
-
-@mixin verified {
-  font-family: $font-stack;
-  font-size: $font-sub;
-  font-weight: $font-medium;
-  color: $color-secondary;
-}
+// **[LAYOUT]**
+$layout-mobile: 375px;
+$layout-desktop: 1440px;

@@ -1,10 +1,83 @@
+// Mobile First
+
+.social-proof {
+  min-height: 100%;
+  max-width: $layout-mobile;
+  padding: 80px 24px;
+
+  border: 1px solid black;
+}
+
+.content-wrapper {
+  width: 327px;
+}
+
 .editorial {
+  min-height: 220px;
+  max-width: 327px;
+  margin-bottom: 40px;
+
+  //   border: 1px solid black;
+
+  &__title {
+    @include title-mobile;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  &__body {
+    @include body-text;
+    font-stretch: expanded;
+    text-align: center;
+    letter-spacing: -1px;
+  }
 }
 
 .ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 266px;
+  max-width: 327px;
+  margin-bottom: 49px;
+
+//   border: 1px solid black;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    width: 327px;
+    height: 78px;
+    border-radius: 8px;
+    background-color: $color-content;
+    // padding: 16px 78px;
+
+    // border: 1px solid black;
+  }
+
+  &__stars {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  &__icon {
+  }
+
+  &__text {
+    @include rating-body-text;
+    margin-bottom: 15px;
+  }
 }
 
 .review-cards {
+  min-height: 528px;
+  max-width: 327px;
+
+  border: 1px solid black;
 }
 
 // Attribution: Don't forgot to add to this at the end
