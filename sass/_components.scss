@@ -1,11 +1,9 @@
 // Mobile First
-
 .social-proof {
+  position: relative;
   min-height: 100%;
   max-width: $layout-mobile;
   padding: 80px 24px;
-
-  border: 1px solid black;
 }
 
 .content-wrapper {
@@ -16,8 +14,6 @@
   min-height: 220px;
   max-width: 327px;
   margin-bottom: 40px;
-
-  //   border: 1px solid black;
 
   &__title {
     @include title-mobile;
@@ -43,28 +39,23 @@
   max-width: 327px;
   margin-bottom: 49px;
 
-//   border: 1px solid black;
-
   &__content {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     width: 327px;
     height: 78px;
     border-radius: 8px;
     background-color: $color-content;
-    // padding: 16px 78px;
-
-    // border: 1px solid black;
   }
 
-  &__stars {
-    display: inline-block;
-    margin-bottom: 16px;
-  }
+  &__stars-group {
+    display: flex;
+    justify-content: space-between;
 
-  &__icon {
+    height: 16px;
+    width: 116px;
+    margin: 16px 0;
   }
 
   &__text {
@@ -73,11 +64,75 @@
   }
 }
 
-.review-cards {
-  min-height: 528px;
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 792px;
   max-width: 327px;
 
-  border: 1px solid black;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 248px;
+    width: 327px;
+    padding: 40px 32px;
+    border-radius: 8px;
+    background-color: $color-primary;
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 160px;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+  }
+
+  &__info {
+    height: 34px;
+    width: 97px;
+  }
+
+  &__name {
+    @include profile-body-text;
+    text-align: left;
+    margin: 4px 0 0 0;
+  }
+
+  &__verified {
+    @include verified-body-text;
+    margin: 7px 0 0 0;
+  }
+
+  &__text {
+    height: 110px;
+    min-width: 263px;
+    @include card-body-text;
+    text-align: left;
+    line-height: 22px;
+    letter-spacing: -0.23px;
+    margin: 26px 0 0 0;
+  }
+}
+
+// Background svg
+.bg-img-top {
+  position: absolute;
+  top: 0;
+  left: -3px;
+}
+
+.bg-img-bottom {
+  position: absolute;
+  bottom: 0;
+  right: -3px;
 }
 
 // Attribution: Don't forgot to add to this at the end

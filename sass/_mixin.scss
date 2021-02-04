@@ -35,12 +35,20 @@
 
 @mixin card-body-text {
   font-size: $font-sub;
-  font-weight: $font-medium;
+  font-weight: $font-regular;
+  color: $color-white;
+}
+
+@mixin profile-body-text {
+  font-size: $font-sub;
+  font-weight: $font-bold;
   color: $color-white;
 }
 
 @mixin verified-body-text {
   font-size: $font-sub;
-  font-weight: $font-medium;
+  font-weight: $font-regular;
   color: $color-secondary;
 }
+
+

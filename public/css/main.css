@@ -89,7 +89,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -139,10 +140,10 @@ body {
   min-width: 100vw; }
 
 .social-proof {
+  position: relative;
   min-height: 100%;
   max-width: 375px;
-  padding: 80px 24px;
-  border: 1px solid black; }
+  padding: 80px 24px; }
 
 .content-wrapper {
   width: 327px; }
@@ -183,19 +184,75 @@ body {
     height: 78px;
     border-radius: 8px;
     background-color: #f7f2f7; }
-  .ratings__stars {
-    display: inline-block;
-    margin-bottom: 16px; }
+  .ratings__stars-group {
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+    width: 116px;
+    margin: 16px 0; }
   .ratings__text {
     font-size: 13px;
     font-weight: 700;
     color: #3e323d;
     margin-bottom: 15px; }
 
-.review-cards {
-  min-height: 528px;
-  max-width: 327px;
-  border: 1px solid black; }
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 792px;
+  max-width: 327px; }
+  .reviews__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 248px;
+    width: 327px;
+    padding: 40px 32px;
+    border-radius: 8px;
+    background-color: #512051; }
+  .reviews__profile {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 160px; }
+  .reviews__avatar {
+    border-radius: 50%; }
+  .reviews__info {
+    height: 34px;
+    width: 97px; }
+  .reviews__name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+    margin: 4px 0 0 0; }
+  .reviews__verified {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ee69a4;
+    margin: 7px 0 0 0; }
+  .reviews__text {
+    height: 110px;
+    min-width: 263px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: left;
+    line-height: 22px;
+    letter-spacing: -0.23px;
+    margin: 26px 0 0 0; }
+
+.bg-img-top {
+  position: absolute;
+  top: 0;
+  left: -3px; }
+
+.bg-img-bottom {
+  position: absolute;
+  bottom: 0;
+  right: -3px; }
 
 .attribution {
   font-size: 11px;
