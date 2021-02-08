@@ -130,7 +130,6 @@
 }
 
 .bg-img-bottom {
-  
   position: absolute;
   bottom: 0;
   right: -3px;
@@ -150,6 +149,7 @@
 
 // Attribution: Don't forgot to add to this at the end
 .attribution {
+  visibility: hidden;
   position: absolute;
   bottom: 28px;
   font-size: 11px;
@@ -267,5 +267,9 @@
     z-index: -2;
     bottom: 0;
     right: -160px;
+  }
+
+  .attribution {
+    visibility: visible;
   }
 }
