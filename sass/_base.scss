@@ -1,11 +1,14 @@
 //**[FONTS]**
+
 // stack
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 $font-stack: "Spartan", sans-serif;
+
 // weight
 $font-regular: 400;
 $font-medium: 500;
 $font-bold: 700;
+
 //size
 $font-title-desktop: 48px;
 $font-title-mobile: 32px;
@@ -13,9 +16,11 @@ $font-body: 15px;
 $font-sub: 13px;
 
 //**[COLORS]**
+
 // Primary
 $color-primary: #512051;
 $color-secondary: #ee69a4;
+
 // Neutral
 $color-title: #3e323d;
 $color-body: #927b91;
